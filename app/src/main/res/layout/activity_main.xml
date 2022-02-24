@@ -7,27 +7,50 @@
     android:background="#393939"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <top.scraft.dashboardwidgets.view.ArcView
-            android:id="@+id/arc1"
-            android:layout_width="wrap_content"
+        <TableRow
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1">
 
-        <top.scraft.dashboardwidgets.view.ArcView
-            android:id="@+id/arc2"
-            android:layout_width="wrap_content"
+            <top.scraft.dashboardwidgets.view.ArcView
+                android:id="@+id/arc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <top.scraft.dashboardwidgets.view.ArcView
+                android:id="@+id/arc2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1" />
+            android:layout_weight="1" >
 
-    </LinearLayout>
+            <top.scraft.dashboardwidgets.view.LedView
+                android:id="@+id/led1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <top.scraft.dashboardwidgets.view.LedView
+                android:id="@+id/led2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <top.scraft.dashboardwidgets.view.LedView
+                android:id="@+id/led3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </TableRow>
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
