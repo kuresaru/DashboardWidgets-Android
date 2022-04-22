@@ -1,4 +1,4 @@
-package top.scraft.dashboardwidgets
+package top.scraft.dashboardwighetstestapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +7,6 @@ import top.scraft.dashboardwidgets.view.LedView
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
-
     private val timer = Timer()
 
     private lateinit var arc1: ArcView

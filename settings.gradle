@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Dashboard Widgets"
 include ':app'
+include ':dashboardwighetstestapp'
